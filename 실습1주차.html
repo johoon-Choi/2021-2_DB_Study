@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 연습</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body {
+                margin:0px;  /* 외부의 틀? 공간을 0px 로 한다. */
+                padding:0px;  /* 내부의 여유공간을 0px 로 한다. */
+            }
+            header{
+                width: 100%;
+                background-color: #005766;
+                height: 200px;
+            }
+            header > div { /* header 라는 태그 밑에 있는 div 라는 태그로 잠시 가는거래 */
+                float: left;
+            }
+            header h1, header p{
+                color: white;
+                text-align: left;
+                padding-top: 20px;
+                margin: 10px;
+            }
+            header h1 {
+                margin-left: 200px;
+            }
+            header p {
+                margin-left: 280px;
+            }
+            header img{
+                height:150px;
+                padding:20px;
+            }
+            nav {
+                clear: both;
+                background-color:#3db7cc;
+                height: 40px;
+            }
+            nav a{
+                width:100px;
+                height: 40px;
+                padding:5px;
+                display:inline-block;
+                text-decoration:none;
+                text-align:center
+            }
+            section {
+                margin:10px;
+                padding: 10px;
+                width:45%;
+                height:200px;
+                float:left;
+                border:1px solid #3db7cc; /* BOX 의 테두리 */
+                                            /* border px 에 따라 두께 결정 */
+                box-sizing: border-box;
+            }
+            section p, section u1, section o1{
+                padding-left: 50px;
+            }
+            h2{ /* 이렇게 바깥에 쓰면 전체 h2에 대해서 값을 적용 */
+                margin:5px;
+                padding:10px;
+                background-color: #005766;
+                color:rgb(255,255,255);
+            }
+            section a{
+                width:80%;
+                height:15px;
+                padding:5px;
+            }
+            footer {
+                clear:both;
+                height:50px;
+                background-color: #eaeaea;
+                color:#5d5d5d;
+                padding:20px;
+                font-size:12px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="./img/SymbolMark_tran.png" alt="본인사진" id="fig">
+            </div>
+            <h1>Choi Jo Hoon</h1>
+            <p>최조훈</p>
+        </header>
+        <nav>
+            <a href="#s1">[개인정보]</a>&nbsp;&nbsp;
+            <a href="#s2">[이수과목]</a>&nbsp;&nbsp;
+            <a href="#s3">[수강과목]</a>&nbsp;&nbsp;
+            <a href="#s4">[자기소개]</a>&nbsp;&nbsp;
+        </nav>
+        <section id="s1">
+            <h2>개인정보</h2>
+            <ul><span class="material-icons">
+                local_phone
+                </span> 010-2226-4687 <br>
+                <span class="material-icons">
+                    email
+                </span> johoon4687@gmail.com <br>
+                <span class="material-icons">
+                    assignment
+                </span> 인천광역시 미추홀구 인하로 100 하이테크 527호 <br>
+            </ul>
+        </section>
+    <section class="sc1" id="s2">
+        <h2 class="c1">이수과목</h2>
+        <ol>
+            <li>객체지향프로그래밍</li>
+            <li>자료구조</li>
+            <li>프로그래밍실습</li>
+            <li>알고리즘설계</li>
+        </ol>
+    </section>
+    <section class="sc2" id="s3">
+        <h2 class="c2">수강과목</h2>
+        <ul>
+            <a href="#s4">데이터베이스설계</a>&nbsp;&nbsp;
+        </ul>
+    </section>
+    <section class="sc2" id="s4">
+        <h2 class="c2">자기소개</h2>
+        <p id="p1">
+            본인 소개를 작성하세요. <br><br>
+            *** 안녕하세요, 데이터베이스 설계 과목입니다. ***
+            <br>
+        </p>
+    </section>
+    <footer>
+        &copy;본인 영문 이름, 이메일 주소
+    </footer>
+    </body>
+</html
