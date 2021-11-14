@@ -2,8 +2,8 @@
 
 ## 3주차 실습 실행 방법
 1. 레포지토리 복사 (wsl 환경에서 명령어 입력)
-    - (SSH 설정한 경우) git clone git@github.com:johoon-Choi/2021_2_DB_study.git
-    - (token을 사용하는 경우) git clone https://github.com/johoon-Choi/2021_2_DB_study.git
+    - (SSH 설정한 경우) git clone git@github.com:johoon-Choi/2021_2_DB.git
+    - (token을 사용하는 경우) git clone https://github.com/johoon-Choi/2021_2_DB.git
 2. week_3 폴더로 이동
     > cd week_3
 3. 콘솔창 (powershell) 에서 npm package 설치
